@@ -785,7 +785,7 @@ public class Thread implements Runnable {
 
 这就要从上面的 `threadLocalName.get()`说起，不记得这个代码的滑上去看下示例，其实就是调用 ThreadLocal 的 get 方法。
 
-此时就进入 `ThreadLocal#get `方法中了，这里就可以得知为什么不同的线程对同一个 ThreadLocal 对象调用 get 方法竟然能得到不同的值了。
+此时就进入 `ThreadLocal 的 get `方法中了，这里就可以得知为什么不同的线程对同一个 ThreadLocal 对象调用 get 方法竟然能得到不同的值了。
 
 ![](https://cdn.jsdelivr.net/gh/yessimida/cdn_image/img/20220123165046.png)
 
